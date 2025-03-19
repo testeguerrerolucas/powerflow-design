@@ -1,18 +1,412 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>powerflow-design</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Automate no Bradesco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <div class="logo-part"></div>
+            </div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                <h1>Power Automate</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#versoes" class="nav-link">Versões</a></li>
+                    <li><a href="#funcionamento" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#integracao" class="nav-link">Integração</a></li>
+                    <li><a href="#contato" class="nav-link button-primary">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">Automação Inteligente</div>
+                    <h1>Power Automate no Bradesco</h1>
+                    <p>Como a Automação Pode Transformar Processos Corporativos</p>
+                    <div class="hero-buttons">
+                        <a href="#saiba-mais" class="button-primary">Saiba Mais</a>
+                        <a href="#demonstracao" class="button-secondary">Ver Demonstração</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-inner">
+                        <div class="floating-elements">
+                            <div class="floating-element fe-1"></div>
+                            <div class="floating-element fe-2"></div>
+                            <div class="floating-element fe-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave"></div>
+        </section>
+
+        <section id="sobre" class="section-what">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">O Poder da Automação</div>
+                    <h2>O que é o Power Automate?</h2>
+                    <p>Uma ferramenta poderosa para automatizar fluxos de trabalho, integrar sistemas e aumentar a eficiência das equipes.</p>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card reveal-animation">
+                        <div class="feature-icon icon-connect"></div>
+                        <h3>Conexão</h3>
+                        <p>Conecte diferentes aplicativos e serviços para criar um fluxo de trabalho automático e sem interrupções.</p>
+                    </div>
+                    <div class="feature-card reveal-animation" data-delay="200">
+                        <div class="feature-icon icon-automate"></div>
+                        <h3>Automação</h3>
+                        <p>Elimine tarefas repetitivas e reduza erros com processos automatizados que economizam tempo.</p>
+                    </div>
+                    <div class="feature-card reveal-animation" data-delay="400">
+                        <div class="feature-icon icon-analyze"></div>
+                        <h3>Análise</h3>
+                        <p>Monitore e analise seus fluxos para otimizar processos e aumentar a produtividade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="versoes" class="section-versions">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Versões Disponíveis</div>
+                    <h2>Principais versões do Power Automate</h2>
+                    <p>O Power Automate oferece diferentes versões para atender às necessidades específicas de sua empresa.</p>
+                </div>
+
+                <div class="version-cards">
+                    <div class="version-card reveal-animation">
+                        <div class="version-number">1</div>
+                        <h3>Power Automate para Web</h3>
+                        <p>Permite automação baseada na nuvem, conectando APIs e serviços como Outlook, Excel, SharePoint e bancos de dados.</p>
+                        <ul class="version-features">
+                            <li>Integração com Microsoft 365</li>
+                            <li>Conectores para APIs</li>
+                            <li>Fluxos automatizados na nuvem</li>
+                        </ul>
+                    </div>
+                    <div class="version-card reveal-animation" data-delay="300">
+                        <div class="version-number">2</div>
+                        <h3>Power Automate Desktop</h3>
+                        <p>Focado em automação RPA (Robotic Process Automation), simulando ações humanas em sistemas que não possuem API.</p>
+                        <ul class="version-features">
+                            <li>Automação de interfaces gráficas</li>
+                            <li>Ideal para sistemas legados</li>
+                            <li>Interação com múltiplas janelas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionamento" class="section-how">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Funcionamento</div>
+                    <h2>Como Funciona o Power Automate?</h2>
+                    <p>O Power Automate funciona criando fluxos de trabalho, que são sequências de ações automáticas disparadas por um evento.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step reveal-animation">
+                        <div class="step-icon icon-trigger"></div>
+                        <div class="step-content">
+                            <h3>Gatilhos (Triggers)</h3>
+                            <p>O evento que inicia o fluxo. Exemplo: "Quando um novo e-mail chegar com um anexo, salvar automaticamente no SharePoint."</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="200">
+                        <div class="step-icon icon-action"></div>
+                        <div class="step-content">
+                            <h3>Ações (Actions)</h3>
+                            <p>O que acontece após o gatilho ser acionado. Exemplo: "Enviar uma notificação no Teams para a equipe de conformidade."</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-animation" data-delay="400">
+                        <div class="step-icon icon-connector"></div>
+                        <div class="step-content">
+                            <h3>Conectores</h3>
+                            <p>Permitem integrar o Power Automate com outras plataformas, como SharePoint, SAP, SQL, Power BI e Dynamics 365.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-box reveal-animation">
+                    <h4>Exemplo de fluxo no Bradesco:</h4>
+                    <p>"Quando um formulário de solicitação de crédito for preenchido, validar automaticamente os dados no SAP, gerar um documento no SharePoint e notificar o gerente responsável via Teams."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="integracao" class="section-integration">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Ecosistema</div>
+                    <h2>Integração do Power Automate com Ferramentas do Bradesco</h2>
+                    <p>O Bradesco pode utilizar o Power Automate para conectar diversas plataformas e criar processos automatizados.</p>
+                </div>
+                
+                <div class="integration-grid">
+                    <div class="integration-card reveal-animation">
+                        <div class="integration-icon icon-sharepoint"></div>
+                        <h3>SharePoint + Power Automate</h3>
+                        <p>Gestão automatizada de documentos e compliance.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="200">
+                        <div class="integration-icon icon-powerbi"></div>
+                        <h3>Power BI + Power Automate</h3>
+                        <p>Geração de relatórios automáticos sobre transações bancárias.</p>
+                    </div>
+                    <div class="integration-card reveal-animation" data-delay="400">
+                        <div class="integration-icon icon-teams"></div>
+                        <h3>Teams + Power Automate</h3>
+                        <p>Notificações automáticas para aprovações e alertas de segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-benefits">
+            <div class="container">
+                <div class="section-header reveal-animation">
+                    <div class="badge">Benefícios</div>
+                    <h2>Por Que Usar Power Automate no Bradesco?</h2>
+                    <p>O Power Automate pode revolucionar a eficiência operacional do Bradesco.</p>
+                </div>
+                
+                <div class="benefits-wrapper">
+                    <div class="benefits-list">
+                        <div class="benefit-item reveal-animation">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Redução de erros</h3>
+                                <p>Automação de processos minimiza falhas manuais.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="150">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Aumento da produtividade</h3>
+                                <p>Processos ágeis e automáticos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="300">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Integração completa</h3>
+                                <p>Conexão com diversas plataformas do banco.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item reveal-animation" data-delay="450">
+                            <div class="benefit-icon"></div>
+                            <div class="benefit-content">
+                                <h3>Automação inteligente</h3>
+                                <p>Uso de IA para otimização de processos bancários.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-image reveal-animation" data-delay="300">
+                        <div class="benefits-image-inner">
+                            <div class="benefits-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="section-contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content reveal-animation">
+                        <div class="badge">Entre em Contato</div>
+                        <h2>Transforme sua operação com o Power Automate</h2>
+                        <p>Descubra como implementar soluções de automação para otimizar processos no Bradesco.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon icon-email"></div>
+                                <p>contato@powerautomate.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon icon-phone"></div>
+                                <p>(11) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal-animation" data-delay="200">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" placeholder="Seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" placeholder="Como podemos ajudar?"></textarea>
+                            </div>
+                            <button type="submit" class="button-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-icon"></span>
+                    <h3>Power Automate</h3>
+                </div>
+                <div class="footer-navigation">
+                    <div class="footer-nav-column">
+                        <h4>Sobre</h4>
+                        <ul>
+                            <li><a href="#">O que é</a></li>
+                            <li><a href="#">Versões</a></li>
+                            <li><a href="#">Como funciona</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Vendas</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Power Automate | Microsoft Corporation. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon icon-linkedin"></a>
+                    <a href="#" class="social-icon icon-twitter"></a>
+                    <a href="#" class="social-icon icon-facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Loader Animation
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+                loader.classList.add('loaded');
+            }, 1500);
+        });
+
+        // Reveal Animations
+        const revealElements = document.querySelectorAll('.reveal-animation');
+        
+        const revealAnimation = () => {
+            const windowHeight = window.innerHeight;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealAnimation);
+        window.addEventListener('load', revealAnimation);
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('click');
+            setTimeout(() => {
+                cursor.classList.remove('click');
+            }, 500);
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    // Close mobile menu if open
+                    menuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
